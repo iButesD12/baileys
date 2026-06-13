@@ -1,7 +1,7 @@
 # WhatsApp Baileys Badzz
 
 <p align="center">
-  <img src="https://d.top4top.io/p_3749w5rv01.jpg" alt="Thumbnail" />
+  <img src="https://b.top4top.io/p_3816tx02l1.jpg" alt="Thumbnail" />
 </p>
 
 WhatsApp Baileys is an open-source library designed to help developers build automation solutions and integrations with WhatsApp efficiently and directly. Using websocket technology without the need for a browser, this library supports a wide range of features such as message management, chat handling, group administration, as well as interactive messages and action buttons for a more dynamic user experience.
@@ -57,7 +57,7 @@ Send group status with version 2
 ```javascript
 await sock.sendMessage(target, {
      groupStatusMessage: {
-          text: "Hello World"
+          text: "#BADZZNE"
      }
 });
 ```
@@ -68,8 +68,8 @@ Send multiple images in a single album message:
 ```javascript
 await sock.sendMessage(target, { 
     albumMessage: [
-        { image: cihuy, caption: "Foto pertama" },
-        { image: { url: "URL IMAGE" }, caption: "Foto kedua" }
+        { image: cihuy, caption: "#BADZZNE" },
+        { image: { url: "URL IMAGE" }, caption: "#BADZZNE" }
     ] 
 }, { quoted: m });
 ```
@@ -81,12 +81,12 @@ Create and send WhatsApp event invitations:
 await sock.sendMessage(target, { 
     eventMessage: { 
         isCanceled: false, 
-        name: "Hello World", 
-        description: "yume native", 
+        name: "#BADZZNE", 
+        description: "#BADZZNE", 
         location: { 
             degreesLatitude: 0, 
             degreesLongitude: 0, 
-            name: "rowrrrr" 
+            name: "#BADZZNE" 
         }, 
         joinLink: "https://call.whatsapp.com/video/badzzne2", 
         startTime: "1763019000", 
@@ -102,14 +102,14 @@ Display poll results with vote counts:
 ```javascript
 await sock.sendMessage(target, { 
     pollResultMessage: { 
-        name: "Hello World", 
+        name: "#BADZZNE", 
         pollVotes: [
             {
-                optionName: "TEST 1",
+                optionName: "#BADZZNE",
                 optionVoteCount: "112233"
             },
             {
-                optionName: "TEST 2",
+                optionName: "#BADZZNE",
                 optionVoteCount: "1"
             }
         ] 
@@ -123,14 +123,14 @@ Send basic interactive messages with copy button functionality:
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "Hello World",
-        title: "Hello World",
+        header: "#BADZZNE",
+        title: "#BADZZNE",
         footer: "telegram: @badzzne2 ",
         buttons: [
             {
                 name: "cta_copy",
                 buttonParamsJson: JSON.stringify({
-                    display_text: "copy code",
+                    display_text: "#BADZZNE",
                     id: "123456789",              
                     copy_code: "ABC123XYZ"
                 })
@@ -146,8 +146,8 @@ Send interactive messages with buttons, copy actions, and native flow features:
 ```javascript
 await sock.sendMessage(target, {    
     interactiveMessage: {      
-        header: "Hello World",
-        title: "Hello World",      
+        header: "#BADZZNE",
+        title: "#BADZZNE",      
         footer: "telegram: @badzzne2",      
         image: { url: "https://example.com/image.jpg" },      
         nativeFlowMessage: {        
@@ -155,14 +155,14 @@ await sock.sendMessage(target, {
                 limited_time_offer: {            
                     text: "idk hummmm?",            
                     url: "https://t.me/badzzne2",            
-                    copy_code: "yume",            
+                    copy_code: "#BADZZNE",            
                     expiration_time: Date.now() * 999          
                 },          
                 bottom_sheet: {            
                     in_thread_buttons_limit: 2,            
                     divider_indices: [1, 2, 3, 4, 5, 999],            
-                    list_title: "yume native",            
-                    button_title: "yume native"          
+                    list_title: "#BADZZNE",            
+                    button_title: "#BADZZNE"          
                 },          
                 tap_target_configuration: {            
                     title: " X ",            
@@ -188,7 +188,7 @@ await sock.sendMessage(target, {
                 {            
                     name: "single_select",            
                     buttonParamsJson: JSON.stringify({              
-                        title: "Hello World",              
+                        title: "#BADZZNE",              
                         sections: [                
                             {                  
                                 title: "title",                  
@@ -225,8 +225,8 @@ Send interactive messages with thumbnail image and copy button:
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "Hello World",
-        title: "Hello World",
+        header: "#BADZZNE",
+        title: "#BADZZNE",
         footer: "telegram: @badzzne2",
         image: { url: "https://example.com/image.jpg" },
         buttons: [
@@ -278,8 +278,8 @@ Send interactive messages with document from buffer (file system) - **Note: Docu
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "Hello World",
-        title: "Hello World",
+        header: "#BADZZNE",
+        title: "#BADZZNE",
         footer: "telegram: @badzzne2",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
@@ -291,8 +291,8 @@ await sock.sendMessage(target, {
             isForwarded: false
         },
         externalAdReply: {
-            title: "shenń Bot",
-            body: "anu team",
+            title: "#BADZZNE",
+            body: "#BADZZNE",
             mediaType: 3,
             thumbnailUrl: "https://example.com/image.jpg",
             mediaUrl: " X ",
@@ -320,8 +320,8 @@ Send interactive messages with document from buffer (file system) without contex
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "Hello World",
-        title: "Hello World",
+        header: "#BADZZNE",
+        title: "#BADZZNE",
         footer: "telegram: @badzzne2",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
